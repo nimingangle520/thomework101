@@ -175,8 +175,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".homepage.InfoActivity"
-            android:theme="@style/TranslucentTheme"></activity>
+        <activity
+            android:name=".homepage.InfoActivity"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name=".homepage.RealNameActivity"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name=".homepage.EducationActivity"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name=".homepage.TeaQualificationActivity"
+            android:theme="@style/TranslucentTheme" />
+        <activity android:name=".homepage.SchoolActivity"
+            android:theme="@style/TranslucentTheme" />
     </application>
 
 </manifest>

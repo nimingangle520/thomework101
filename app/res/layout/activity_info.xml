@@ -44,6 +44,7 @@
             android:layout_height="@dimen/y46"
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@+id/iv_visa_arrow"
+            android:layout_marginRight="@dimen/x14"
             android:src="@drawable/visa" />
     </RelativeLayout>
 
@@ -116,31 +117,140 @@
 
 
     <RelativeLayout
+        android:id="@+id/rl_info_real_time"
         android:layout_width="match_parent"
         android:layout_height="@dimen/y50">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/homepage_info_real_time"
+            android:text="@string/homepage_info_real_name"
             android:textColor="@color/black"
             android:textSize="@dimen/sp_16"
             android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/x24"
             />
-        <ImageView
+        <TextView
             android:id="@+id/iv_autoynm_arrow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="@dimen/x16"
-            android:src="@drawable/arrow_gray" />
+            android:layout_marginRight="@dimen/x20"
+            android:text="@string/homepage_info_certified"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/font_color_unselected"
+            />
     </RelativeLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/y1"
         android:layout_marginLeft="@dimen/x20"
         android:background="@color/line_bg">
     </View>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_info_education"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/homepage_info_education"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x24"
+            />
+        <TextView
+            android:id="@+id/iv_education_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x20"
+            android:text="@string/homepage_info_certified"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/font_color_unselected"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x20"
+        android:background="@color/line_bg">
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/rl_info_tea_qualification"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/homepage_info_tea_qualification"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x24"
+            />
+        <TextView
+            android:id="@+id/iv_teachers_qualification_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x20"
+            android:text="@string/homepage_info_certified"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/font_color_unselected"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x20"
+        android:background="@color/line_bg">
+    </View>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/homepage_info_specialty_qualification"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x24"
+            />
+        <TextView
+            android:id="@+id/iv_specialty_qualification_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x20"
+            android:text="@string/homepage_info_certified"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/font_color_unselected"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x20"
+        android:background="@color/line_bg">
+    </View>
+
 </LinearLayout>

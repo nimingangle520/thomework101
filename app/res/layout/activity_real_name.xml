@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".homepage.RealNameActivity">
+
+    <include layout="@layout/actionbar_layout"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/line_bg">
+    </View>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y50">
+
+
+                <TextView
+                    android:id="@+id/tv_info_real_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x24"
+                    android:text="@string/homepage_info_real_username"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x17"
+                    android:layout_toRightOf="@+id/tv_info_real_username"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="@string/homepage_info_please_input_real_username"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/hint_font_color"
+                    android:textSize="@dimen/sp_16" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:layout_marginLeft="@dimen/x20"
+                android:background="@color/line_bg"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y50">
+
+
+                <TextView
+                    android:id="@+id/tv_info_id_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x24"
+                    android:text="@string/homepage_info_id_card"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x17"
+                    android:layout_toRightOf="@+id/tv_info_id_card"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="@string/homepage_info_please_input_id_card"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/hint_font_color"
+                    android:textSize="@dimen/sp_16" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:layout_marginLeft="@dimen/x20"
+                android:background="@color/line_bg"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y14">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x24"
+                    android:text="@string/homepage_info_upload_id_card"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x17"
+                    android:text="@string/homepage_info_sample"
+                    android:textColor="@color/font_color_select"
+                    android:textSize="@dimen/sp_16" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y14">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y180"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@color/id_card_bg"></View>
+
+                <View
+                    android:layout_width="@dimen/x45"
+                    android:layout_height="@dimen/y3"
+                    android:layout_centerInParent="true"
+                    android:background="@color/add_color"></View>
+
+                <View
+                    android:layout_width="@dimen/x3"
+                    android:layout_height="@dimen/y42"
+                    android:layout_centerInParent="true"
+                    android:background="@color/add_color"></View>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y10"
+                android:text="@string/homepage_info_please_upload_id_card_front"
+                android:textColor="@color/teaching_grade_notice"
+                android:textSize="@dimen/sp_14" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y14">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y180"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@color/id_card_bg"></View>
+
+                <View
+                    android:layout_width="@dimen/x45"
+                    android:layout_height="@dimen/y3"
+                    android:layout_centerInParent="true"
+                    android:background="@color/add_color"></View>
+
+                <View
+                    android:layout_width="@dimen/x3"
+                    android:layout_height="@dimen/y42"
+                    android:layout_centerInParent="true"
+                    android:background="@color/add_color"></View>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y10"
+                android:text="@string/homepage_info_please_upload_id_card_verso"
+                android:textColor="@color/teaching_grade_notice"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y26"
+                android:text="@string/homepage_info_autonym_notice"
+                android:textColor="@color/font_color_select"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y1"
+                android:text="@string/homepage_info_autonym_notice_one"
+                android:textColor="@color/teaching_grade_notice"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y3"
+                android:text="@string/homepage_info_autonym_notice_two"
+                android:textColor="@color/teaching_grade_notice"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

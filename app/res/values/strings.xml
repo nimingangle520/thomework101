@@ -140,6 +140,29 @@
     <string name="notice">提示</string>
     <string name="notice_msg">您正在辅导中,确定要取消辅导吗？</string>
     <string name="homepage_info_visa">头像</string>
-    <string name="homepage_info_real_time">实名认证</string>
-
+    <string name="homepage_info_real_name">实名认证</string>
+    <string name="homepage_info_certified">待认证</string>
+    <string name="homepage_info_education">学历认证</string>
+    <string name="homepage_info_tea_qualification">教师资质</string>
+    <string name="homepage_info_specialty_qualification">专业认证</string>
+    <string name="homepage_info">个人中心</string>
+    <string name="homepage_info_real_username">真实姓名</string>
+    <string name="homepage_info_please_input_real_username">请输入真实姓名</string>
+    <string name="homepage_info_id_card">身份证号</string>
+    <string name="homepage_info_please_input_id_card">请输入身份证号</string>
+    <string name="homepage_info_upload_id_card">上传身份证照片</string>
+    <string name="homepage_info_sample">示例</string>
+    <string name="homepage_info_please_upload_id_card_front">(请上床身份证正面照片)</string>
+    <string name="homepage_info_please_upload_id_card_verso">(请上床身份证反面照片)</string>
+    <string name="homepage_info_autonym_notice">*实名要求：</string>
+    <string name="homepage_info_autonym_notice_one">1.请保证填写的信息真实有效；</string>
+    <string name="homepage_info_autonym_notice_two">2.证件图片上的信息清晰可见、无遮挡、无修改；</string>
+    <string name="homepage_info_edu">学历</string>
+    <string name="homepage_info_school">学校</string>
+    <string name="homepage_info_school_time">在校时间</string>
+    <string name="homepage_info_upload_edu_pic">上传学历证明照片</string>
+    <string name="homepage_info_upload_edu_pic_notice">*如果你是在校生，请上传学生证件照，如果你已经毕业，请上传毕业证照片</string>
+    <string name="homepage_info_tea_qualification_notice">教师资质可以证明您的教师身份</string>
+    <string name="homepage_info_tea_qualification_suggest">*请提交您的有效教师证件照片</string>
+    <string name="commit">提交</string>
 </resources>

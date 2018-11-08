@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".homepage.EducationActivity">
+
+    <include layout="@layout/actionbar_layout"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/line_bg">
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/rl_edu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y51">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x24"
+            android:text="@string/homepage_info_edu"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+
+        <ImageView
+            android:id="@+id/iv_edu_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x16"
+            android:src="@drawable/arrow_gray" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x20"
+        android:background="@color/line_bg">
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/rl_education"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/homepage_info_school"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x24"
+            />
+        <ImageView
+            android:id="@+id/iv_school_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x16"
+            android:src="@drawable/arrow_gray" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x20"
+        android:background="@color/line_bg">
+    </View>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/homepage_info_school_time"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x24"
+            />
+        <ImageView
+            android:id="@+id/iv_school_time_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x16"
+            android:src="@drawable/arrow_gray" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x20"
+        android:background="@color/line_bg">
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16"
+        android:text="@string/homepage_info_upload_edu_pic"
+        android:layout_marginLeft="@dimen/x25"
+        android:layout_marginTop="@dimen/y14"
+        />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y14">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y180"
+            android:layout_marginLeft="@dimen/x28"
+            android:layout_marginRight="@dimen/x28"
+            android:background="@color/id_card_bg">
+
+        </View>
+
+        <View
+            android:layout_width="@dimen/x45"
+            android:layout_height="@dimen/y3"
+            android:layout_centerInParent="true"
+            android:background="@color/add_color">
+
+        </View>
+
+        <View
+            android:layout_width="@dimen/x3"
+            android:layout_height="@dimen/y42"
+            android:layout_centerInParent="true"
+            android:background="@color/add_color">
+
+        </View>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/teaching_grade_notice"
+        android:text="@string/homepage_info_upload_edu_pic_notice"
+        android:layout_marginLeft="@dimen/x28"
+        android:layout_marginRight="@dimen/x28"
+        android:layout_marginTop="@dimen/y16"
+        />
+
+</LinearLayout>
