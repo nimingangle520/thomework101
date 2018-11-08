@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.shushan.thomework101.login.TeachingGradeActivity">
+    <include
+        android:id="@+id/include_grade"
+        layout="@layout/playback" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/teaching_grade_notice"
+        android:textColor="@color/teaching_grade_notice"
+        android:textSize="@dimen/sp_14"
+        android:layout_marginLeft="@dimen/x23"
+        android:layout_marginTop="@dimen/y14"
+        />
+    <ListView
+        android:id="@+id/lv_grade"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/y14"
+        android:layout_marginLeft="@dimen/x23"
+        android:divider="@null"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:listSelector="#00000000"
+        />
+</LinearLayout>

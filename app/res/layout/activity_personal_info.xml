@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.shushan.thomework101.login.PersonalInfoActivity">
+
+    <include
+        android:id="@+id/include_personal"
+        layout="@layout/playback"></include>
+
+    <TextView
+        android:id="@+id/tv_personal_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x44"
+        android:layout_marginTop="@dimen/y15"
+        android:text="@string/personal_notice"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_personal_visa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/y24"
+        android:background="@drawable/default_head_image" />
+
+    <RelativeLayout
+        android:id="@+id/rl_personal_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:layout_marginTop="@dimen/y28"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x24"
+            android:text="@string/personal_ll"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x31"
+            android:text="@string/personal_ll_default"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x20"
+        android:background="@color/line_bg" />
+
+    <RelativeLayout
+        android:id="@+id/rl_personal_sex"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x24"
+            android:text="@string/personal_sex"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x9"
+            android:layout_toLeftOf="@+id/iv_personal_arrow"
+            android:text="@string/personal_sex_default"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/sp_16" />
+
+        <ImageView
+            android:id="@+id/iv_personal_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x16"
+            android:background="@drawable/arrow_gray" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x20"
+        android:background="@color/line_bg" />
+
+    <RelativeLayout
+        android:id="@+id/rl_personal_date"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x24"
+            android:text="@string/personal_date"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x9"
+            android:layout_toLeftOf="@+id/iv_personal_date_arrow"
+            android:text="@string/personal_date_default"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/sp_16" />
+
+        <ImageView
+            android:id="@+id/iv_personal_date_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x16"
+            android:background="@drawable/arrow_gray" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x20"
+        android:background="@color/line_bg" />
+
+    <RelativeLayout
+        android:id="@+id/rl_personal_area"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x24"
+            android:text="@string/personal_area"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x9"
+            android:layout_toLeftOf="@+id/iv_personal_area_arrow"
+            android:text="@string/personal_area_default"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/sp_16" />
+
+        <ImageView
+            android:id="@+id/iv_personal_area_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x16"
+            android:background="@drawable/arrow_gray" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x20"
+        android:background="@color/line_bg" />
+
+    <RelativeLayout
+        android:id="@+id/rl_personal_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x24"
+            android:text="@string/personal_introduce"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/sp_16" />
+
+        <ImageView
+            android:id="@+id/iv_personal_introduce_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x16"
+            android:background="@drawable/arrow_gray" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x20"
+        android:background="@color/line_bg" />
+
+    <Button
+        android:id="@+id/btn_personal_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x48"
+        android:layout_marginRight="@dimen/x47"
+        android:layout_marginTop="@dimen/y50"
+        android:background="@drawable/button_1"
+        android:text="@string/register_next"
+        android:textColor="@color/white" />
+</LinearLayout>

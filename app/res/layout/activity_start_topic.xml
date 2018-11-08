@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".tutorship.StartTopicActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_vp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y484">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_start_topic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+
+        <ImageView
+            android:id="@+id/iv_start_topic_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_marginTop="@dimen/y30"
+            android:src="@drawable/connection_more" />
+
+        <TextView
+            android:id="@+id/tv_vp_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginRight="@dimen/x10"
+            android:text="1/5"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_voice_call"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/coach_call"
+            android:layout_above="@+id/tv_voice_call"
+            android:layout_marginBottom="@dimen/y10"
+            />
+        <TextView
+            android:id="@+id/tv_voice_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/homepage_teaching_score"
+            android:text="@string/tutorship_voice_call"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/btn_start_topic"
+            android:layout_marginBottom="@dimen/y22"
+            />
+        <Button
+            android:id="@+id/btn_start_topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button4"
+            android:layout_marginRight="@dimen/x97"
+            android:layout_marginLeft="@dimen/x98"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            android:text="@string/tutorship_start_topic"
+            android:layout_marginBottom="@dimen/y34"
+            />
+</RelativeLayout>

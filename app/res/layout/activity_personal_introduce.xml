@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.shushan.thomework101.login.PersonalIntroduceActivity">
+
+    <include
+        android:id="@+id/include_introduce"
+        layout="@layout/playback"></include>
+
+    <EditText
+        android:id="@+id/et_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y300"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:background="@drawable/introduce_edit_bg"
+        android:gravity="left|top"
+        android:hint="@string/personal_introduce_notice"
+        android:inputType="textMultiLine"
+        android:textSize="@dimen/sp_16"
+        android:paddingTop="@dimen/y12"
+        android:paddingLeft="@dimen/x14"
+        app:layout_constraintTop_toBottomOf="@+id/include_introduce" />
+
+    <TextView
+        android:id="@+id/tv_introduce_font_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y11"
+        android:layout_marginRight="@dimen/x14"
+        android:text="@string/personal_introduce_font_count"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintBottom_toBottomOf="@+id/et_introduce"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>

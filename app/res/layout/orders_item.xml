@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_orders_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y112"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y38"
+        >
+
+        <TextView
+            android:id="@+id/tv_orders_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x13"
+            android:text="2018-08-08 08:08"
+            android:textColor="@color/teaching_grade_notice"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_orders_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x18"
+            android:text="@string/orders_obligation"
+            android:textColor="@color/identity_rb_font"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_orders_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y3"
+        android:layout_marginLeft="@dimen/x13"
+        android:background="@color/line_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_teacher_icon_bg"
+            android:layout_width="@dimen/x52"
+            android:layout_height="@dimen/y52"
+            android:layout_centerVertical="true"
+            android:background="@drawable/orders_teacher_visa_bg"
+            android:layout_marginLeft="@dimen/x18"
+            />
+
+
+        <com.shushan.thomework101.banner.ImageViewRoundRect
+            android:id="@+id/iv_orders_stu_visa"
+            android:layout_width="@dimen/x46"
+            android:layout_height="@dimen/y46"
+            android:src="@drawable/visa"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x21"
+            />
+
+        <TextView
+            android:id="@+id/tv_orders_stu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_orders_stu_visa"
+            android:text="@string/homepage_teacher_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/x17"
+            android:layout_marginTop="@dimen/y16"
+            />
+
+        <TextView
+            android:id="@+id/tv_orders_stu_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_orders_stu_name"
+            android:layout_marginTop="@dimen/y1"
+            android:layout_toRightOf="@+id/iv_orders_stu_visa"
+            android:text="@string/tutorship_teaching_grade"
+            android:textSize="@dimen/sp_12"
+            android:layout_marginLeft="@dimen/x17"
+            />
+        <TextView
+            android:id="@+id/tv_orders_obligation_money_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@+id/tv_orders_stu_grade"
+            android:text="￥88.00"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/identity_rb_font"
+            android:layout_marginRight="@dimen/x18"
+            />
+        <TextView
+            android:id="@+id/tv_orders_obligation_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/orders_obligation_money"
+            android:layout_alignBaseline="@+id/tv_orders_obligation_money_details"
+            android:layout_toLeftOf="@+id/tv_orders_obligation_money_details"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_13"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+</LinearLayout>

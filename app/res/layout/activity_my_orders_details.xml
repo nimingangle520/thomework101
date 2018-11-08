@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <include
+        android:id="@+id/include_tutorship_details"
+        layout="@layout/actionbar_layout">
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/include_tutorship_details"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/homepage_listview_bg"
+
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_mine_help_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y10"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_tutorship"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x12"
+                    android:layout_marginTop="@dimen/y11"
+                    android:text="@string/orders_homework_help"
+                    android:textColor="@color/teaching_grade_notice"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_tutorship_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x18"
+                    android:layout_marginTop="@dimen/y18"
+                    android:text="@string/orders_complete"
+                    android:textColor="@color/teaching_grade_notice"
+                    android:textSize="@dimen/sp_14" />
+
+                <View
+                    android:id="@+id/view_line_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y1"
+                    android:layout_below="@+id/tv_tutorship_state"
+                    android:layout_marginLeft="@dimen/x12"
+                    android:layout_marginTop="@dimen/y7"
+                    android:background="@color/line_bg" />
+
+                <ImageView
+                    android:id="@+id/iv_teacher_icon_bg"
+                    android:layout_width="@dimen/x52"
+                    android:layout_height="@dimen/y52"
+                    android:layout_below="@+id/view_line_one"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:layout_marginTop="@dimen/y10"
+                    android:background="@drawable/orders_teacher_visa_bg" />
+
+                <com.shushan.thomework101.banner.ImageViewRoundRect
+                    android:id="@+id/iv_teacher_visa"
+                    android:layout_width="@dimen/x46"
+                    android:layout_height="@dimen/y46"
+                    android:layout_below="@+id/view_line_one"
+                    android:layout_marginLeft="@dimen/x21"
+                    android:layout_marginTop="@dimen/y13"
+                    android:src="@drawable/visa" />
+
+                <TextView
+                    android:id="@+id/tv_teacher_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_line_one"
+                    android:layout_marginLeft="@dimen/x13"
+                    android:layout_marginTop="@dimen/y18"
+                    android:layout_toRightOf="@+id/iv_teacher_icon_bg"
+                    android:text="@string/homepage_teacher_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_teacher_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_teacher_name"
+                    android:layout_marginLeft="@dimen/x13"
+                    android:layout_marginTop="@dimen/y1"
+                    android:layout_toRightOf="@+id/iv_teacher_icon_bg"
+                    android:text="@string/orders_class"
+                    android:textColor="@color/teaching_grade_notice"
+                    android:textSize="@dimen/sp_12" />
+
+                <LinearLayout
+                    android:id="@+id/ll_mine_tutorship_gridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y12"
+                    android:layout_below="@+id/iv_teacher_icon_bg"
+                    android:layout_marginBottom="@dimen/y20"
+                    android:orientation="horizontal">
+
+                    <GridView
+                        android:id="@+id/gridView_mine_tutorship"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/x17"
+                        android:layout_marginRight="@dimen/x17"
+                        android:cacheColorHint="@android:color/transparent"
+                        android:gravity="center"
+                        android:horizontalSpacing="@dimen/x5"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="@dimen/y5"
+                        android:numColumns="3"
+                        />
+                </LinearLayout>
+
+
+
+                <com.shushan.thomework101.banner.ImageViewRoundRect
+                    android:id="@+id/view_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y180"
+                    android:layout_below="@+id/iv_teacher_icon_bg"
+                    android:layout_marginLeft="@dimen/x28"
+                    android:layout_marginRight="@dimen/x28"
+                    android:layout_marginTop="@dimen/y12"
+                    android:src="@drawable/homework"
+                    android:visibility="gone"
+                    >
+                </com.shushan.thomework101.banner.ImageViewRoundRect>
+
+                <ImageView
+                    android:id="@+id/view_video_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y180"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/iv_teacher_icon_bg"
+                    android:layout_marginLeft="@dimen/x28"
+                    android:layout_marginRight="@dimen/x28"
+                    android:layout_marginTop="@dimen/y12"
+                    android:src="@drawable/homework_orders_details_homework_bg"
+                    android:visibility="gone"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x166"
+                    android:layout_marginTop="@dimen/y189"
+                    android:background="@drawable/play_big"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_tutorship_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_video_bg"
+                    android:layout_marginBottom="@dimen/y15"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:layout_marginTop="@dimen/y15"
+                    android:text="@string/orders_tutorship_duration"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_tutorship_duration_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/view_video_bg"
+                    android:layout_marginBottom="@dimen/y15"
+                    android:layout_marginRight="@dimen/x18"
+                    android:layout_marginTop="@dimen/y15"
+                    android:text="@string/orders_tutorship_duration_default"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_mine_help_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_mine_help_top"
+                android:layout_marginTop="@dimen/y10"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_tutorship_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:layout_marginTop="@dimen/y14"
+                    android:text="@string/orders_tutorship_money"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_tutorship_money_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x18"
+                    android:layout_marginTop="@dimen/y14"
+                    android:text="@string/orders_tutorship_price_details"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_amount_paid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_tutorship_money"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:layout_marginTop="@dimen/y10"
+                    android:text="@string/orders_tutorship_amount_paid"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_amount_paid_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_tutorship_money"
+                    android:layout_marginRight="@dimen/x18"
+                    android:layout_marginTop="@dimen/y8"
+                    android:text="@string/orders_tutorship_amount_paid_default"
+                    android:textColor="@color/font_color_select"
+                    android:textSize="@dimen/sp_18" />
+
+                <View
+                    android:id="@+id/view_tutorship_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y1"
+                    android:layout_below="@+id/tv_amount_paid_default"
+                    android:layout_marginLeft="@dimen/x12"
+                    android:layout_marginTop="@dimen/y14"
+                    android:background="@color/line_bg" />
+
+                <TextView
+                    android:id="@+id/tv_tutorship_orders_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_tutorship_two"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:layout_marginTop="@dimen/y12"
+                    android:text="@string/orders_tutorship_orders_num"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_tutorship_orders_num_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/view_tutorship_two"
+                    android:layout_marginRight="@dimen/x18"
+                    android:layout_marginTop="@dimen/y12"
+                    android:text="@string/orders_tutorship_orders_num_default"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_tutorship_orders_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_tutorship_orders_num"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:layout_marginTop="@dimen/y6"
+                    android:text="@string/orders_tutorship_order_time"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_tutorship_orders_time_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_tutorship_orders_num"
+                    android:layout_marginRight="@dimen/x18"
+                    android:layout_marginTop="@dimen/y6"
+                    android:text="@string/orders_tutorship_order_time_default"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_tutorship_pay_way"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_tutorship_orders_time_default"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:layout_marginTop="@dimen/y6"
+                    android:text="@string/orders_tutorship_pay_way"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_tutorship_pay_way_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_tutorship_orders_time_default"
+                    android:layout_marginRight="@dimen/x18"
+                    android:layout_marginTop="@dimen/y6"
+                    android:text="@string/orders_tutorship_pay_way_default"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_tutorship_pay_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_tutorship_pay_way"
+                    android:layout_marginBottom="@dimen/y14"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:layout_marginTop="@dimen/y6"
+                    android:text="@string/orders_tutorship_pay_time"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_tutorship_pay_time_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_tutorship_pay_way"
+                    android:layout_marginBottom="@dimen/y14"
+                    android:layout_marginRight="@dimen/x18"
+                    android:layout_marginTop="@dimen/y6"
+                    android:text="@string/orders_tutorship_pay_time_default"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

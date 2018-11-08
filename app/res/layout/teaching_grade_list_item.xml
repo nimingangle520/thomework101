@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y50"
+    >
+    <TextView
+        android:id="@+id/tv_teaching_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/black"
+        android:text="@string/teaching_grade_default"
+        android:layout_centerVertical="true"
+        />
+    <ImageView
+        android:id="@+id/iv_teaching_grade"
+        android:layout_width="@dimen/x23"
+        android:layout_height="@dimen/y23"
+        android:background="@drawable/teaching_grade_circle"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x16"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/line_bg"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="ring"
+    android:innerRadius="@dimen/x10"
+    android:thickness="@dimen/x1"
+    android:useLevel="false">
+
+    <stroke
+        android:width="@dimen/x1"
+        android:color="@color/teaching_grade_circle_bg"
+        />
+</shape> 

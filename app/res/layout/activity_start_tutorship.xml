@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tutorship.StartTutorshipActivity">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_start_tutorship"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+
+        <ImageView
+            android:id="@+id/iv_start_tutorship_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_marginTop="@dimen/y30"
+            android:src="@drawable/connection_more" />
+
+        <TextView
+            android:id="@+id/tv_start_tutorship_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/y75"
+            android:layout_marginRight="@dimen/x10"
+            android:text="1/5"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"
+            />
+    <Button
+        android:id="@+id/btn_start_tutorship"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_1"
+        android:layout_marginBottom="@dimen/y25"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/x47"
+        android:layout_marginRight="@dimen/x47"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/white"
+        android:text="@string/tutorship_start_tutorship"
+        />
+</RelativeLayout>

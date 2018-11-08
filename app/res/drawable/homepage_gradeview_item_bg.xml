@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item >
+        <shape>//边框的颜色
+            <solid android:color="@color/line_bg" />
+            <corners android:bottomRightRadius="@dimen/x4"
+                android:bottomLeftRadius="@dimen/x4"
+                />
+        </shape>
+    </item>
+    <item
+        android:right="@dimen/x1"
+        android:left="@dimen/x1"
+        android:bottom="@dimen/x1"
+        >
+        <shape>
+            <solid android:color="@color/white" />
+            <corners android:bottomRightRadius="@dimen/x4"
+                     android:bottomLeftRadius="@dimen/x4"
+                />
+        </shape>
+    </item>
+
+</layer-list>

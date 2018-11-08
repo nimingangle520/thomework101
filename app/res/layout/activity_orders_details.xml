@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".homepage.HomeworkOrdersDetailsActivity">
+
+    <include layout="@layout/playback" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/homepage_listview_bg"
+        android:orientation="vertical"
+        >
+    <RelativeLayout
+        android:id="@+id/rl_orders_details_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:paddingTop="@dimen/y10"
+        >
+        <ImageView
+            android:id="@+id/iv_orders_details_time"
+            android:layout_width="@dimen/x4"
+            android:layout_height="@dimen/y16"
+            android:layout_centerVertical="true"
+            android:background="@color/identity_rb_font"
+            />
+        <TextView
+            android:id="@+id/tv_orders_details_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_orders_details_time"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginLeft="@dimen/x12"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginTop="@dimen/y10"
+        android:background="@drawable/homework_orders_details_teacher_info_bg">
+
+        <ImageView
+            android:id="@+id/iv_teacher_icon_bg"
+            android:layout_width="@dimen/x58"
+            android:layout_height="@dimen/y58"
+            android:layout_centerVertical="true"
+            android:background="@drawable/orders_teacher_visa_bg"
+            android:layout_marginLeft="@dimen/x16"
+            />
+
+        <com.shushan.thomework101.banner.ImageViewRoundRect
+            android:id="@+id/iv_orders_teacher_visa"
+            android:layout_width="@dimen/x52"
+            android:layout_height="@dimen/y52"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x19"
+            android:src="@drawable/visa" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x13"
+            android:layout_toRightOf="@+id/iv_orders_teacher_visa"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_orders_teacher_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/homepage_teacher_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_orders_teaching_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_orders_teacher_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/x2"
+                android:text="@string/teaching_grade_default"
+                android:textColor="@color/homepage_teaching_score"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_orders_check_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_marginTop="@dimen/x20"
+                >
+                <ImageView
+                    android:id="@+id/iv_orders_check_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/price_gray" />
+
+                <TextView
+                    android:id="@+id/tv_orders_check_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x4"
+                    android:layout_toRightOf="@+id/iv_orders_check_price"
+                    android:text="@string/homework_orders_details_check_price"
+                    android:textColor="@color/homepage_teaching_score"
+                    android:textSize="@dimen/sp_13" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_orders_check_default_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/rl_orders_check_price"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_marginTop="@dimen/y3"
+                android:text="@string/homework_orders_details_check_price_default"
+                android:textColor="@color/homepage_bg_end_color"
+                android:textSize="@dimen/sp_16"
+                />
+    </RelativeLayout>
+
+    <com.shushan.thomework101.xbanner.BannerLayout
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="340dp"
+        app:autoPlaying="true"
+        app:centerScale="1.2"
+        app:itemSpace="20"
+        app:moveSpeed="1.8"/>
+
+    <Button
+        android:id="@+id/btn_orders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y37"
+        android:background="@drawable/button_1"
+        android:layout_marginRight="@dimen/x47"
+        android:layout_marginLeft="@dimen/x48"
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/white"
+        android:text="@string/homework_orders_details_take_order"
+        />
+    <TextView
+        android:id="@+id/tv_orders_go_help"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y42"
+        android:layout_marginTop="@dimen/y37"
+        android:background="@drawable/homepage_orders_details_go_help"
+        android:layout_marginRight="@dimen/x47"
+        android:layout_marginLeft="@dimen/x48"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/white"
+        android:text="@string/homepage_go_tutorship"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+        <TextView
+            android:id="@+id/tv_orders_wait_go_help"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y42"
+            android:layout_marginTop="@dimen/y37"
+            android:background="@drawable/homepage_orders_details_wait_go_help"
+            android:layout_marginRight="@dimen/x47"
+            android:layout_marginLeft="@dimen/x48"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="@string/homepage_distance_learning"
+            />
+
+    </LinearLayout>
+</LinearLayout>

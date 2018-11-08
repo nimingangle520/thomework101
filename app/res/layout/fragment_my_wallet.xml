@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cdl_wallet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/identity_rb_font"
+        android:fitsSystemWindows="true"
+        >
+
+        <View
+            android:id="@+id/view_wallet_fillStatusBarView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x20"
+            app:layout_scrollFlags="scroll"
+            android:fitsSystemWindows="true"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y44"
+            app:layout_scrollFlags="scroll"
+            >
+
+            <ImageView
+                android:id="@+id/iv_wallet_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x15"
+                android:paddingRight="@dimen/x10"
+                android:paddingTop="@dimen/y5"
+                android:layout_marginBottom="@dimen/y5"
+                android:src="@drawable/go_back_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/wallet_my_wallet"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_18"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y179"
+            android:background="@drawable/wallet_background"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <TextView
+                android:id="@+id/tv_wallet_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/y18"
+                android:text="@string/wallet_account_balance"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/tv_wallet_balance_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_wallet_balance"
+                android:layout_centerHorizontal="true"
+                android:text="1099.88"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_34" />
+
+            <Button
+                android:id="@+id/btn_wallet_withdraw"
+                android:layout_width="@dimen/x103"
+                android:layout_height="@dimen/y33"
+                android:layout_below="@+id/tv_wallet_balance_details"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/y19"
+                android:background="@drawable/wallet_withdraw_bg"
+                android:text="@string/wallet_withdraw"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y44"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:text="@string/wallet_bill_details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16" />
+
+            <ImageView
+                android:id="@+id/iv_wallet_time_down_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x17"
+                android:src="@drawable/arrow_down" />
+
+            <TextView
+                android:id="@+id/tv_wallet_bill_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x3"
+                android:layout_toLeftOf="@+id/iv_wallet_time_down_arrow"
+                android:text="@string/wallet_bill_time"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16" />
+
+            <ImageView
+                android:id="@+id/iv_wallet_filter_down_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x17"
+                android:layout_toLeftOf="@+id/tv_wallet_bill_time"
+                android:src="@drawable/arrow_down" />
+
+            <TextView
+                android:id="@+id/tv_wallet_bill_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x3"
+                android:layout_toLeftOf="@+id/iv_wallet_filter_down_arrow"
+                android:text="@string/wallet_bill_filter"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:background="@color/line_bg" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

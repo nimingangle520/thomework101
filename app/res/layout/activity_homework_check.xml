@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tutorship.HomeworkCheckActivity">
+    <RelativeLayout
+        android:id="@+id/rl_check"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_check_bottom"
+        >
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_check"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+
+        <ImageView
+            android:id="@+id/iv_check_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_marginTop="@dimen/y30"
+            android:src="@drawable/connection_more" />
+
+        <TextView
+            android:id="@+id/tv_check_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/y16"
+            android:layout_marginRight="@dimen/x10"
+            android:text="1/5"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_check_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:background="@color/tutorship_homework_tutorship_bottom_bg"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_paint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x24"
+            >
+
+            <ImageView
+                android:id="@+id/iv_paint_red"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/y20"
+                android:src="@drawable/paint_red_circle"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_paint_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_paint_red"
+                android:layout_marginTop="@dimen/y1"
+                android:src="@drawable/paint_circle"
+                android:text="@string/tutorship_paint"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_10" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_undo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/rl_paint"
+            android:layout_marginLeft="@dimen/x34"
+            >
+
+            <ImageView
+                android:id="@+id/iv_undo"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/y20"
+                android:src="@drawable/coach_revoke"
+                />
+            <TextView
+                android:id="@+id/tv_undo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_undo"
+                android:layout_marginTop="@dimen/y1"
+                android:src="@drawable/paint_circle"
+                android:text="@string/tutorship_undo"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_10" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/rl_undo"
+            android:layout_marginLeft="@dimen/x30"
+            >
+
+            <ImageView
+                android:id="@+id/iv_clean"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/y20"
+                android:src="@drawable/coach_delete"
+                />
+            <TextView
+                android:id="@+id/tv_clean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_clean"
+                android:layout_marginTop="@dimen/y1"
+                android:src="@drawable/paint_circle"
+                android:text="@string/tutorship_clean"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_10"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_page_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/rl_clean"
+            android:layout_marginLeft="@dimen/x30"
+            >
+
+            <ImageView
+                android:id="@+id/iv_page_up"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/y20"
+                android:src="@drawable/previous_page"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:id="@+id/tv_page_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_page_up"
+                android:layout_marginTop="@dimen/y3"
+                android:src="@drawable/paint_circle"
+                android:text="@string/tutorship_check_page_up"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_10"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_page_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/rl_page_up"
+            android:layout_marginLeft="@dimen/x20"
+            >
+
+            <ImageView
+                android:id="@+id/iv_page_down"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/y20"
+                android:src="@drawable/next_page"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:id="@+id/tv_page_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_page_down"
+                android:layout_marginTop="@dimen/y3"
+                android:src="@drawable/paint_circle"
+                android:text="@string/tutorship_check_page_dowm"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_10"
+                />
+        </RelativeLayout>
+
+      <Button
+          android:id="@+id/btn_check_finish"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_marginLeft="@dimen/x15"
+          android:background="@drawable/coach_finish_button"
+          />
+    </RelativeLayout>
+</RelativeLayout>

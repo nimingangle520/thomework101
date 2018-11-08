@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tutorship.HomeworkTutorshipActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_tutorship"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y167">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_tutorship"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+
+        <ImageView
+            android:id="@+id/iv_tutorship_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_marginTop="@dimen/y30"
+            android:src="@drawable/connection_more" />
+
+        <TextView
+            android:id="@+id/tv_tutorship_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginRight="@dimen/x10"
+            android:text="1/5"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_tutorship_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:background="@color/tutorship_homework_tutorship_bottom_bg"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_paint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x24"
+            >
+
+            <ImageView
+                android:id="@+id/iv_paint_black"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/y20"
+                android:src="@drawable/paint_circle"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_paint_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_paint_black"
+                android:layout_marginTop="@dimen/y1"
+                android:src="@drawable/paint_circle"
+                android:text="@string/tutorship_paint"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_10" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/rl_paint"
+            android:layout_marginLeft="@dimen/x43"
+            >
+
+            <ImageView
+                android:id="@+id/iv_clean"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/y20"
+                android:src="@drawable/coach_delete"
+                />
+            <TextView
+                android:id="@+id/tv_clean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_clean"
+                android:layout_marginTop="@dimen/y1"
+                android:src="@drawable/paint_circle"
+                android:text="@string/tutorship_clean"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_10" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/rl_clean"
+            android:layout_marginLeft="@dimen/x43"
+            >
+
+            <ImageView
+                android:id="@+id/iv_time"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/y20"
+                android:src="@drawable/coach_time"
+                />
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_time"
+                android:layout_marginTop="@dimen/y1"
+                android:src="@drawable/paint_circle"
+                android:text="00:10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:layout_marginLeft="@dimen/x7"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_undo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/rl_time"
+            android:layout_marginLeft="@dimen/x39"
+            >
+
+            <ImageView
+                android:id="@+id/iv_undo"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/y20"
+                android:src="@drawable/coach_revoke"
+                />
+            <TextView
+                android:id="@+id/tv_undo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_undo"
+                android:layout_marginTop="@dimen/y1"
+                android:src="@drawable/paint_circle"
+                android:text="@string/tutorship_undo"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_10"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_restore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/rl_undo"
+            android:layout_marginLeft="@dimen/x35"
+            >
+
+            <ImageView
+                android:id="@+id/iv_restore"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/y20"
+                android:src="@drawable/coach_restore"
+                />
+            <TextView
+                android:id="@+id/tv_restore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_restore"
+                android:layout_marginTop="@dimen/y1"
+                android:src="@drawable/paint_circle"
+                android:text="@string/tutorship_restore"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_10"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_paint_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/rl_tutorship_bottom"
+        android:layout_marginBottom="@dimen/y14"
+        android:visibility="invisible"
+        >
+    <View
+        android:id="@+id/view_paint_black"
+        android:layout_width="@dimen/x18"
+        android:layout_height="@dimen/y18"
+        android:background="@drawable/paint_circle"
+        android:layout_marginLeft="@dimen/x26"
+        />
+        <View
+            android:id="@+id/view_paint_red"
+            android:layout_width="@dimen/x18"
+            android:layout_height="@dimen/y18"
+            android:background="@drawable/paint_red_circle"
+            android:layout_marginLeft="@dimen/x23"
+            />
+        <View
+            android:id="@+id/view_paint_yellow"
+            android:layout_width="@dimen/x18"
+            android:layout_height="@dimen/y18"
+            android:background="@drawable/paint_yellow_circle"
+            android:layout_marginLeft="@dimen/x23"
+            />
+        <View
+            android:id="@+id/view_paint_blue"
+            android:layout_width="@dimen/x18"
+            android:layout_height="@dimen/y18"
+            android:background="@drawable/paint_blue_circle"
+            android:layout_marginLeft="@dimen/x23"
+            />
+        <View
+            android:id="@+id/view_paint_green"
+            android:layout_width="@dimen/x18"
+            android:layout_height="@dimen/y18"
+            android:background="@drawable/paint_green_circle"
+            android:layout_marginLeft="@dimen/x23"
+            />
+        <View
+            android:id="@+id/view_paint_purple"
+            android:layout_width="@dimen/x18"
+            android:layout_height="@dimen/y18"
+            android:background="@drawable/paint_purple_circle"
+            android:layout_marginLeft="@dimen/x23"
+            />
+    </LinearLayout>
+
+    <com.shushan.thomework101.tutorship.VerticalSeekBar
+        android:id="@+id/sb_tutorship"
+        android:layout_width="@dimen/x14"
+        android:layout_height="@dimen/y190"
+        android:layout_above="@+id/ll_paint_color"
+        android:layout_marginBottom="@dimen/y12"
+        android:progressDrawable="@drawable/coach_pen_horizontal"
+        android:thumb="@drawable/tutorship_seekbar_thumb"
+        android:max="100"
+        android:maxWidth="@dimen/x14"
+        android:maxHeight="@dimen/y190"
+        android:progress="0"
+        android:layout_marginLeft="@dimen/x29"
+        android:paddingStart="@dimen/x7"
+        android:paddingEnd="@dimen/y7"
+        android:splitTrack="false"
+        android:visibility="invisible"
+        />
+   <!-- android:thumbOffset="0dp"-->
+</RelativeLayout>

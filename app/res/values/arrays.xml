@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="grade">
+        <item>一年级</item>
+        <item>二年级</item>
+        <item>三年级</item>
+        <item>四年级</item>
+        <item>五年级</item>
+        <item>六年级</item>
+    </string-array>
+    <string-array name="menus_titles">
+        <item>我的订单</item>
+        <item>我的钱包</item>
+        <item>联系客服</item>
+        <item>邀请老师</item>
+        <item>设置</item>
+    </string-array>
+    <string-array name="orders_category">
+        <item>全部</item>
+        <item>待付款</item>
+        <item>已完成</item>
+        <item>已取消</item>
+    </string-array>
+</resources>
