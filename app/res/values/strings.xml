@@ -134,6 +134,23 @@
     <string name="wallet_transaction_type">交易类型</string>
     <string name="wallet_all">全部</string>
     <string name="wallet_recharge">充值</string>
+    <string name="wallet_add_card">添加银行卡</string>
+    <string name="wallet_withdraw_money">提现金额</string>
+    <string name="wallet_withdraw_money_available">可提现金额：¥1088.50</string>
+    <string name="wallet_withdraw_notice">提现须知</string>
+    <string name="wallet_withdraw_notice_details">1.申请提现金额不得低于50元\n2.每日提现最高金额不得超过5000\n3.每周日之前提交申请</string>
+    <string name="wallet_cardholder">持卡人</string>
+    <string name="wallet_cardholder_name">请填写持卡人姓名</string>
+    <string name="wallet_card_num">银行卡号</string>
+    <string name="wallet_please_input_card_num">请输入银行卡号</string>
+    <string name="wallet_add_card_notice">*请绑定持卡人本人的银行卡</string>
+    <string name="wallet_bind_card">绑定银行卡</string>
+    <string name="wallet_bank_name">开户行</string>
+    <string name="wallet_card_type">卡类型</string>
+    <string name="wallet_ensure_bind">确认绑定</string>
+    <string name="wallet_card_name">中国工商银行</string>
+    <string name="wallet_mine_wallet">我的银行卡</string>
+
     <string name="dollar">元</string>
     <string name="dollar_per_minute">元/分钟</string>
     <string name="news">消息</string>

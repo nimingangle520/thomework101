@@ -10,12 +10,6 @@
 
     <include layout="@layout/actionbar_layout"></include>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/y1"
-        android:background="@color/line_bg">
-    </View>
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -131,19 +125,19 @@
                     android:layout_height="@dimen/y180"
                     android:layout_marginLeft="@dimen/x20"
                     android:layout_marginRight="@dimen/x20"
-                    android:background="@color/id_card_bg"></View>
+                    android:background="@color/wallet_id_card_bg"></View>
 
                 <View
                     android:layout_width="@dimen/x45"
                     android:layout_height="@dimen/y3"
                     android:layout_centerInParent="true"
-                    android:background="@color/add_color"></View>
+                    android:background="@color/wallet_id_card_bg"></View>
 
                 <View
                     android:layout_width="@dimen/x3"
                     android:layout_height="@dimen/y42"
                     android:layout_centerInParent="true"
-                    android:background="@color/add_color"></View>
+                    android:background="@color/wallet_add_color"></View>
             </RelativeLayout>
 
             <TextView
@@ -165,19 +159,19 @@
                     android:layout_height="@dimen/y180"
                     android:layout_marginLeft="@dimen/x20"
                     android:layout_marginRight="@dimen/x20"
-                    android:background="@color/id_card_bg"></View>
+                    android:background="@color/wallet_id_card_bg"></View>
 
                 <View
                     android:layout_width="@dimen/x45"
                     android:layout_height="@dimen/y3"
                     android:layout_centerInParent="true"
-                    android:background="@color/add_color"></View>
+                    android:background="@color/wallet_add_color"></View>
 
                 <View
                     android:layout_width="@dimen/x3"
                     android:layout_height="@dimen/y42"
                     android:layout_centerInParent="true"
-                    android:background="@color/add_color"></View>
+                    android:background="@color/wallet_add_color"></View>
             </RelativeLayout>
 
             <TextView

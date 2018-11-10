@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:background="@drawable/icbc2"
+        >
+
+        <ImageView
+            android:id="@+id/iv_wallet_card_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icbc"
+            android:layout_marginTop="@dimen/y18"
+            android:layout_marginLeft="@dimen/x13"
+            />
+        <TextView
+            android:id="@+id/tv_wallet_card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/iv_wallet_card_icon"
+            android:layout_marginTop="@dimen/y18"
+            android:layout_marginLeft="@dimen/x13"
+            android:textSize="@dimen/sp_20"
+            android:text="@string/wallet_card_name"
+            />
+        <TextView
+            android:id="@+id/tv_wallet_card_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_below="@+id/tv_wallet_card_name"
+            android:layout_marginTop="@dimen/y2"
+            android:layout_marginLeft="@dimen/x53"
+            android:textSize="@dimen/sp_20"
+            android:text="6222 2487 8121 2124 888"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_gray"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"
+            />
+    </RelativeLayout>
+</LinearLayout>

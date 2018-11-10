@@ -13,6 +13,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
@@ -55,7 +56,8 @@ public class MyWalletFragment extends BaseFragment implements View.OnClickListen
     TextView tv_wallet_bill_time;
     @Bind(R.id.cdl_wallet)
     CoordinatorLayout cdl_wallet;
-
+    @Bind(R.id.btn_wallet_withdraw)
+    Button btn_wallet_withdraw;
 
     private MyWalletBillAdapter myWalletBillAdapter;
     private WalletPresenter walletPresenter;
@@ -115,6 +117,7 @@ public class MyWalletFragment extends BaseFragment implements View.OnClickListen
 
     @Override
     public void initEvents() {
+        btn_wallet_withdraw.setOnClickListener(this);
         billFilterPopup.setOnItemClickListener(this);
         tv_wallet_bill_time.setOnClickListener(this);
         tv_wallet_bill_filter.setOnClickListener(this);
@@ -182,6 +185,9 @@ public class MyWalletFragment extends BaseFragment implements View.OnClickListen
     @Override
     public void onClick(View view) {
         switch (view.getId()){
+            case R.id.btn_wallet_withdraw:
+                startActivitys(getActivity(),WithdrawActivity.class);
+                break;
             case R.id.iv_wallet_back:
                 startActivitys(mContext, HomepageActivity.class);
                 break;

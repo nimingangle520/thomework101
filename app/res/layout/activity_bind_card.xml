@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".wallet.BindCardActivity">
+
+    <include layout="@layout/actionbar_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        >
+
+        <TextView
+            android:id="@+id/tv_wallet_cardholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginLeft="@dimen/x24"
+            android:layout_centerVertical="true"
+            android:text="@string/wallet_cardholder"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_toRightOf="@+id/tv_wallet_cardholder"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/x34"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x20"
+        android:background="@color/line_bg"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        >
+
+        <TextView
+            android:id="@+id/tv_wallet_card_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginLeft="@dimen/x24"
+            android:layout_centerVertical="true"
+            android:text="@string/wallet_card_num"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_toRightOf="@+id/tv_wallet_card_num"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/x34"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x20"
+        android:background="@color/line_bg"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        >
+
+        <TextView
+            android:id="@+id/tv_wallet_bank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginLeft="@dimen/x24"
+            android:layout_centerVertical="true"
+            android:text="@string/wallet_bank_name"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_toRightOf="@+id/tv_wallet_bank_name"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/x34"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x20"
+        android:background="@color/line_bg"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        >
+
+        <TextView
+            android:id="@+id/tv_wallet_card_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginLeft="@dimen/x24"
+            android:layout_centerVertical="true"
+            android:text="@string/wallet_card_type"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_toRightOf="@+id/tv_wallet_card_type"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/x34"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x20"
+        android:background="@color/line_bg"
+        />
+
+    <Button
+        android:id="@+id/tv_wallet_ensure_bind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y40"
+        android:background="@drawable/button_1"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/white"
+        android:text="@string/wallet_ensure_bind"
+        />
+
+</LinearLayout>

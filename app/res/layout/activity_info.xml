@@ -10,12 +10,6 @@
 
     <include layout="@layout/actionbar_layout"></include>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/y1"
-        android:background="@color/line_bg">
-    </View>
-
     <RelativeLayout
         android:id="@+id/rl_vias"
         android:layout_width="match_parent"
